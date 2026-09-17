@@ -1,6 +1,8 @@
 {
   "name": "Neon",
   "colours": [
+    { "name": "Black", "hex": "#171717" },
+    { "name": "White", "hex": "#FFFFFF" },
     { "name": "Red", "hex": "#ff3344" },
     { "name": "Hot pink", "hex": "#ff2d95" },
     { "name": "Orange", "hex": "#ff7a00" },
