@@ -1,9 +1,9 @@
-const CACHE='shit-krita-v2';
+const CACHE='shit-krita-v3';
 const CORE=[
   './',
   './index.html',
-  './styles.css?v=6',
-  './studio.js?v=9',
+  './styles.css?v=9',
+  './studio.js?v=10',
   './manifest.webmanifest',
   './icon.svg',
   './config/default.json',
@@ -11,7 +11,8 @@ const CORE=[
   './config/palettes/original.json',
   './config/palettes/soft.json',
   './config/palettes/neon.json',
-  './config/palettes/greyscale.json'
+  './config/palettes/greyscale.json',
+  './config/palettes/skin-deep.json'
 ];
 
 self.addEventListener('install',event=>{
