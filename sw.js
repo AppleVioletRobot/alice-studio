@@ -1,9 +1,9 @@
-const CACHE='shit-krita-v1';
+const CACHE='shit-krita-v2';
 const CORE=[
   './',
   './index.html',
-  './styles.css?v=5',
-  './studio.js?v=8',
+  './styles.css?v=6',
+  './studio.js?v=9',
   './manifest.webmanifest',
   './icon.svg',
   './config/default.json',
