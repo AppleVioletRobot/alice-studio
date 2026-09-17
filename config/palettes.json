@@ -1,0 +1,9 @@
+{
+  "default": "original",
+  "palettes": [
+    { "id": "original", "name": "Original", "file": "palettes/original.json" },
+    { "id": "soft", "name": "Soft", "file": "palettes/soft.json" },
+    { "id": "neon", "name": "Neon", "file": "palettes/neon.json" },
+    { "id": "greyscale", "name": "Greyscale", "file": "palettes/greyscale.json" }
+  ]
+}
