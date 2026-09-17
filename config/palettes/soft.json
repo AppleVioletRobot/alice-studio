@@ -3,13 +3,13 @@
   "colours": [
     { "name": "Ink", "hex": "#3f4146" },
     { "name": "Cloud", "hex": "#c9c8c4" },
-    { "name": "Deep rose", "hex": "#a94f68" },
-    { "name": "Peach", "hex": "#e7a37f" },
-    { "name": "Custard", "hex": "#e8cf72" },
-    { "name": "Pistachio", "hex": "#a9c98f" },
-    { "name": "Aqua", "hex": "#73c8c5" },
-    { "name": "Lilac blue", "hex": "#8589c7" },
-    { "name": "Shell pink", "hex": "#dfa1b0" },
-    { "name": "Plum", "hex": "#74536f" }
+    { "name": "Deep rose", "hex": "#CC2C69" },
+    { "name": "Peach", "hex": "#F09376" },
+    { "name": "Custard", "hex": "#FDF587" },
+    { "name": "Pistachio", "hex": "#BBE177" },
+    { "name": "Aqua", "hex": "#71DBD8" },
+    { "name": "Lilac", "hex": "#8589C7" },
+    { "name": "Shell pink", "hex": "#E8BADC" },
+    { "name": "Plum", "hex": "#74536F" }
   ]
 }
