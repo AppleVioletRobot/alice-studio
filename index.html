@@ -48,7 +48,14 @@
   <script src="studio.js?v=9"></script>
   <script>
     if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js'));
+      window.addEventListener('load', async () => {
+        try {
+          const reg = await navigator.serviceWorker.register('./sw.js?v=2', { updateViaCache: 'none' });
+          await reg.update();
+        } catch (e) {
+          console.warn('Shit Krita offline worker did not update', e);
+        }
+      });
     }
   </script>
 </body>
