@@ -1,6 +1,8 @@
 {
   "name": "Soft",
   "colours": [
+    { "name": "Black", "hex": "#171717" },
+    { "name": "White", "hex": "#FFFFFF" },
     { "name": "Deep rose", "hex": "#CC2C69" },
     { "name": "Peach", "hex": "#F09376" },
     { "name": "Custard", "hex": "#FDF587" },
