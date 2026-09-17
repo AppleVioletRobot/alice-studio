@@ -7,9 +7,14 @@
   <title>Shit Krita</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=6">
+  <link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
+  <div class="splash" id="splash" aria-hidden="true">
+    <img class="splash-roundel" src="icon.svg" alt="">
+    <div class="splash-name">SHIT KRITA</div>
+    <div class="splash-motto">DICK ABOUT &amp; DISCOVER</div>
+  </div>
   <header class="topbar">
     <div class="brand">
       <img class="brand-roundel" src="icon.svg" alt="">
@@ -47,6 +52,11 @@
   </main>
   <script src="studio.js?v=9"></script>
   <script>
+    window.addEventListener('load', () => {
+      const splash = document.getElementById('splash');
+      window.setTimeout(() => splash?.classList.add('splash-away'), 1200);
+      window.setTimeout(() => splash?.remove(), 1700);
+    });
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', async () => {
         try {
