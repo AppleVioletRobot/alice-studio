@@ -1,6 +1,8 @@
 {
   "name": "Skin Deep",
   "colours": [
+    { "name": "Black", "hex": "#171717" },
+    { "name": "White", "hex": "#FFFFFF" },
     { "name": "Porcelain", "hex": "#F6D7C3" },
     { "name": "Peach", "hex": "#EBC0A4" },
     { "name": "Rose Beige", "hex": "#D9A184" },
