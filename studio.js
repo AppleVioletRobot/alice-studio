@@ -1,6 +1,6 @@
 (async()=>{
  const config=await fetch('config/default.json').then(r=>r.json());
- const paletteMenu=await fetch('config/palettes.json').then(r=>r.json());
+ const paletteMenu=await fetch('config/palettes.json?t='+Date.now(),{cache:'no-store'}).then(r=>r.json());
  const canvas=document.querySelector('#canvas'),wrap=document.querySelector('#canvas-wrap'),ctx=canvas.getContext('2d',{willReadFrequently:true});
  document.querySelector('#studio-title').textContent=config.name==='Alice Studio'?'Shit Krita':(config.name||'Shit Krita');
  const STORAGE_KEY=config.storageKey||'alice-studio-autosave', background=config.background||'#fff';
