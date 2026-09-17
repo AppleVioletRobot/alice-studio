@@ -20,8 +20,8 @@
         <button class="tool draw-tool" data-tool="pencil" data-material="dots" type="button" aria-label="Dots"><span class="dot-tool-icon" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></button>
       </div>
       <div class="tool-group utility-tools">
-        <button class="tool utility-tool" data-tool="eraser" type="button" aria-label="Eraser"><svg class="tool-svg utility-svg" viewBox="0 0 32 32" aria-hidden="true"><path d="M7 21L18 7l8 7-11 13H9l-4-4 2-2zM11 17l8 7"/></svg></button>
-        <button class="tool utility-tool" data-tool="fill" type="button" aria-label="Fill bucket"><svg class="tool-svg utility-svg" viewBox="0 0 32 32" aria-hidden="true"><path d="M8 14l9-9 10 10-9 9H8V14zM12 10l10 10M7 27h20"/></svg></button>
+        <button class="tool utility-tool" data-tool="eraser" type="button" aria-label="Eraser">▱</button>
+        <button class="tool utility-tool" data-tool="fill" type="button" aria-label="Fill bucket">▰</button>
       </div>
       <div id="widths" class="widths" aria-label="Nib width"></div>
       <div id="palette" class="palette" aria-label="Colours"></div>
@@ -30,6 +30,6 @@
     <section class="canvas-wrap" id="canvas-wrap"><canvas id="canvas" aria-label="Drawing canvas"></canvas></section>
   </main>
   <script src="studio.js?v=11"></script>
-  <script>window.addEventListener('load',()=>{const splash=document.getElementById('splash');window.setTimeout(()=>splash?.classList.add('splash-away'),1200);window.setTimeout(()=>splash?.remove(),1700)});if('serviceWorker' in navigator){window.addEventListener('load',async()=>{try{const reg=await navigator.serviceWorker.register('./sw.js?v=5',{updateViaCache:'none'});await reg.update()}catch(e){console.warn('Shit Krita offline worker did not update',e)}})}</script>
+  <script>window.addEventListener('load',()=>{const splash=document.getElementById('splash');window.setTimeout(()=>splash?.classList.add('splash-away'),1200);window.setTimeout(()=>splash?.remove(),1700)});if('serviceWorker' in navigator){window.addEventListener('load',async()=>{try{const reg=await navigator.serviceWorker.register('./sw.js?v=6',{updateViaCache:'none'});await reg.update()}catch(e){console.warn('Shit Krita offline worker did not update',e)}})}</script>
 </body>
 </html>
