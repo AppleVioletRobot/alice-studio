@@ -1,7 +1,7 @@
 {
   "name": "Soft",
   "colours": [
-    { "name": "Ink", "hex": "#3f4146" },
+    { "name": "White", "hex": "#FFFFFF" },
     { "name": "Cloud", "hex": "#c9c8c4" },
     { "name": "Deep rose", "hex": "#CC2C69" },
     { "name": "Peach", "hex": "#F09376" },
