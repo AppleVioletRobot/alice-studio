@@ -7,16 +7,18 @@
   <title>Shit Krita</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
   <header class="topbar">
-    <h1 id="studio-title">Shit Krita</h1>
+    <div class="brand">
+      <img class="brand-roundel" src="icon.svg" alt="">
+      <h1 id="studio-title">Shit Krita</h1>
+    </div>
     <div class="top-actions">
       <select id="palette-select" class="action-select" aria-label="Colours" title="Colours">
         <option value="" disabled selected>Colours</option>
       </select>
-      <button id="save" class="save" type="button">Save</button>
       <button id="undo" type="button">Undo</button>
       <button id="clear" type="button">Clear</button>
     </div>
@@ -34,12 +36,16 @@
         <button class="texture" data-texture="dots" type="button">DOT</button>
       </div>
       <div id="palette" class="palette" aria-label="Colours"></div>
+      <div class="file-actions">
+        <button id="save" type="button">SAVE</button>
+        <button id="share" type="button">SHARE</button>
+      </div>
     </aside>
     <section class="canvas-wrap" id="canvas-wrap">
       <canvas id="canvas" aria-label="Drawing canvas"></canvas>
     </section>
   </main>
-  <script src="studio.js?v=8"></script>
+  <script src="studio.js?v=9"></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js'));
