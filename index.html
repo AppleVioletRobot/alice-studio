@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#f3efe5">
-  <title>Alice Studio</title>
-  <link rel="stylesheet" href="styles.css?v=3">
+  <title>Shit Krita</title>
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
   <header class="topbar">
-    <h1 id="studio-title">Alice Studio</h1>
+    <h1 id="studio-title">Shit Krita</h1>
     <div class="top-actions">
       <select id="palette-select" class="action-select" aria-label="Colours" title="Colours">
         <option value="" disabled selected>Colours</option>
@@ -27,12 +27,16 @@
         <button class="tool" data-tool="fill" type="button" aria-label="Fill bucket">▰</button>
       </div>
       <div id="widths" class="widths" aria-label="Pencil width"></div>
+      <div class="textures" aria-label="Texture">
+        <button class="texture active" data-texture="solid" type="button" aria-label="Solid texture" title="Solid">●</button>
+        <button class="texture" data-texture="dots" type="button" aria-label="Halftone dots" title="Dots">⠿</button>
+      </div>
       <div id="palette" class="palette" aria-label="Colours"></div>
     </aside>
     <section class="canvas-wrap" id="canvas-wrap">
       <canvas id="canvas" aria-label="Drawing canvas"></canvas>
     </section>
   </main>
-  <script src="studio.js?v=3"></script>
+  <script src="studio.js?v=4"></script>
 </body>
 </html>
