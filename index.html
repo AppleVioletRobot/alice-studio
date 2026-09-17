@@ -7,35 +7,21 @@
   <title>Shit Krita</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=10">
+  <link rel="stylesheet" href="styles.css?v=11">
 </head>
 <body>
-  <div class="splash" id="splash" aria-hidden="true">
-    <img class="splash-roundel" src="icon.svg" alt="">
-    <div class="splash-name">SHIT KRITA</div>
-    <div class="splash-motto">DICK ABOUT &amp; DISCOVER</div>
-  </div>
-  <header class="topbar">
-    <div class="brand">
-      <img class="brand-roundel" src="icon.svg" alt="">
-      <div class="brand-copy">
-        <h1 id="studio-title">Shit Krita</h1>
-        <div class="brand-motto">DICK ABOUT &amp; DISCOVER</div>
-      </div>
-    </div>
-    <div class="top-actions">
-      <select id="palette-select" class="action-select" aria-label="Colours" title="Colours"><option value="" disabled selected>Colours</option></select>
-      <button id="undo" type="button">Undo</button><button id="clear" type="button">Clear</button>
-    </div>
-  </header>
+  <div class="splash" id="splash" aria-hidden="true"><img class="splash-roundel" src="icon.svg" alt=""><div class="splash-name">SHIT KRITA</div><div class="splash-motto">DICK ABOUT &amp; DISCOVER</div></div>
+  <header class="topbar"><div class="brand"><img class="brand-roundel" src="icon.svg" alt=""><div class="brand-copy"><h1 id="studio-title">Shit Krita</h1><div class="brand-motto">DICK ABOUT &amp; DISCOVER</div></div></div><div class="top-actions"><select id="palette-select" class="action-select" aria-label="Colours" title="Colours"><option value="" disabled selected>Colours</option></select><button id="undo" type="button">Undo</button><button id="clear" type="button">Clear</button></div></header>
   <main class="studio">
     <aside class="tools" aria-label="Drawing tools">
-      <div class="tool-group">
-        <button class="tool draw-tool active" data-tool="pencil" data-material="solid" type="button" aria-label="Pen">✎</button>
-        <button class="tool draw-tool" data-tool="pencil" data-material="crayon" type="button" aria-label="Crayon">🖍</button>
+      <div class="tool-group draw-tools">
+        <button class="tool draw-tool active" data-tool="pencil" data-material="solid" type="button" aria-label="Pen"><svg class="tool-svg" viewBox="0 0 32 32" aria-hidden="true"><path d="M8 25l4-10L23 4l5 5-11 11-9 5zM12 15l5 5M8 25l7-2-5-5-2 7z"/></svg></button>
+        <button class="tool draw-tool" data-tool="pencil" data-material="crayon" type="button" aria-label="Crayon"><svg class="tool-svg" viewBox="0 0 32 32" aria-hidden="true"><path d="M7 24L21 5l5 4-14 19-6 1 1-5zM18 9l5 4M9 21l5 4"/></svg></button>
         <button class="tool draw-tool" data-tool="pencil" data-material="dots" type="button" aria-label="Dots"><span class="dot-tool-icon" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></button>
-        <button class="tool" data-tool="eraser" type="button" aria-label="Eraser">▱</button>
-        <button class="tool" data-tool="fill" type="button" aria-label="Fill bucket">▰</button>
+      </div>
+      <div class="tool-group utility-tools">
+        <button class="tool utility-tool" data-tool="eraser" type="button" aria-label="Eraser"><svg class="tool-svg utility-svg" viewBox="0 0 32 32" aria-hidden="true"><path d="M7 21L18 7l8 7-11 13H9l-4-4 2-2zM11 17l8 7"/></svg></button>
+        <button class="tool utility-tool" data-tool="fill" type="button" aria-label="Fill bucket"><svg class="tool-svg utility-svg" viewBox="0 0 32 32" aria-hidden="true"><path d="M8 14l9-9 10 10-9 9H8V14zM12 10l10 10M7 27h20"/></svg></button>
       </div>
       <div id="widths" class="widths" aria-label="Nib width"></div>
       <div id="palette" class="palette" aria-label="Colours"></div>
@@ -44,9 +30,6 @@
     <section class="canvas-wrap" id="canvas-wrap"><canvas id="canvas" aria-label="Drawing canvas"></canvas></section>
   </main>
   <script src="studio.js?v=11"></script>
-  <script>
-    window.addEventListener('load',()=>{const splash=document.getElementById('splash');window.setTimeout(()=>splash?.classList.add('splash-away'),1200);window.setTimeout(()=>splash?.remove(),1700)});
-    if('serviceWorker' in navigator){window.addEventListener('load',async()=>{try{const reg=await navigator.serviceWorker.register('./sw.js?v=4',{updateViaCache:'none'});await reg.update()}catch(e){console.warn('Shit Krita offline worker did not update',e)}})}
-  </script>
+  <script>window.addEventListener('load',()=>{const splash=document.getElementById('splash');window.setTimeout(()=>splash?.classList.add('splash-away'),1200);window.setTimeout(()=>splash?.remove(),1700)});if('serviceWorker' in navigator){window.addEventListener('load',async()=>{try{const reg=await navigator.serviceWorker.register('./sw.js?v=5',{updateViaCache:'none'});await reg.update()}catch(e){console.warn('Shit Krita offline worker did not update',e)}})}</script>
 </body>
 </html>
