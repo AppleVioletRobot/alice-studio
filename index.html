@@ -7,7 +7,7 @@
   <title>Shit Krita</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=9">
+  <link rel="stylesheet" href="styles.css?v=10">
 </head>
 <body>
   <div class="splash" id="splash" aria-hidden="true">
@@ -24,53 +24,29 @@
       </div>
     </div>
     <div class="top-actions">
-      <select id="palette-select" class="action-select" aria-label="Colours" title="Colours">
-        <option value="" disabled selected>Colours</option>
-      </select>
-      <button id="undo" type="button">Undo</button>
-      <button id="clear" type="button">Clear</button>
+      <select id="palette-select" class="action-select" aria-label="Colours" title="Colours"><option value="" disabled selected>Colours</option></select>
+      <button id="undo" type="button">Undo</button><button id="clear" type="button">Clear</button>
     </div>
   </header>
   <main class="studio">
     <aside class="tools" aria-label="Drawing tools">
       <div class="tool-group">
-        <button class="tool active" data-tool="pencil" type="button" aria-label="Pencil">✎</button>
+        <button class="tool draw-tool active" data-tool="pencil" data-material="solid" type="button" aria-label="Pen">✎</button>
+        <button class="tool draw-tool" data-tool="pencil" data-material="crayon" type="button" aria-label="Crayon">🖍</button>
+        <button class="tool draw-tool" data-tool="pencil" data-material="dots" type="button" aria-label="Dots"><span class="dot-tool-icon" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></button>
         <button class="tool" data-tool="eraser" type="button" aria-label="Eraser">▱</button>
         <button class="tool" data-tool="fill" type="button" aria-label="Fill bucket">▰</button>
       </div>
-      <div id="widths" class="widths" aria-label="Pencil width"></div>
-      <div class="textures" aria-label="Texture">
-        <button class="texture active" data-texture="solid" type="button">INK</button>
-        <button class="texture" data-texture="dots" type="button">DOT</button>
-        <button class="texture" data-texture="crayon" type="button">CRAYON</button>
-      </div>
+      <div id="widths" class="widths" aria-label="Nib width"></div>
       <div id="palette" class="palette" aria-label="Colours"></div>
-      <div class="file-actions">
-        <button id="save" type="button">SAVE</button>
-        <button id="share" type="button">SHARE</button>
-      </div>
+      <div class="file-actions"><button id="save" type="button">SAVE</button><button id="share" type="button">SHARE</button></div>
     </aside>
-    <section class="canvas-wrap" id="canvas-wrap">
-      <canvas id="canvas" aria-label="Drawing canvas"></canvas>
-    </section>
+    <section class="canvas-wrap" id="canvas-wrap"><canvas id="canvas" aria-label="Drawing canvas"></canvas></section>
   </main>
-  <script src="studio.js?v=10"></script>
+  <script src="studio.js?v=11"></script>
   <script>
-    window.addEventListener('load', () => {
-      const splash = document.getElementById('splash');
-      window.setTimeout(() => splash?.classList.add('splash-away'), 1200);
-      window.setTimeout(() => splash?.remove(), 1700);
-    });
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', async () => {
-        try {
-          const reg = await navigator.serviceWorker.register('./sw.js?v=3', { updateViaCache: 'none' });
-          await reg.update();
-        } catch (e) {
-          console.warn('Shit Krita offline worker did not update', e);
-        }
-      });
-    }
+    window.addEventListener('load',()=>{const splash=document.getElementById('splash');window.setTimeout(()=>splash?.classList.add('splash-away'),1200);window.setTimeout(()=>splash?.remove(),1700)});
+    if('serviceWorker' in navigator){window.addEventListener('load',async()=>{try{const reg=await navigator.serviceWorker.register('./sw.js?v=4',{updateViaCache:'none'});await reg.update()}catch(e){console.warn('Shit Krita offline worker did not update',e)}})}
   </script>
 </body>
 </html>
