@@ -1,0 +1,15 @@
+{
+  "name": "Soft",
+  "colours": [
+    { "name": "Soft charcoal", "hex": "#45413f" },
+    { "name": "Warm grey", "hex": "#aaa39c" },
+    { "name": "Rose", "hex": "#c9827b" },
+    { "name": "Apricot", "hex": "#dda575" },
+    { "name": "Butter", "hex": "#d9c978" },
+    { "name": "Soft sage", "hex": "#8da18a" },
+    { "name": "Powder blue", "hex": "#86a5b8" },
+    { "name": "Lavender", "hex": "#9c8eaa" },
+    { "name": "Blush", "hex": "#d7a2a2" },
+    { "name": "Taupe", "hex": "#9b8172" }
+  ]
+}
